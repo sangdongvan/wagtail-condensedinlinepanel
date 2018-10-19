@@ -86,7 +86,7 @@ class BaseCondensedInlinePanelFormSet(BaseChildFormSet):
                                 'title': obj.title
                             }
                         elif issubclass(model, AbstractImage):
-                            rendition = obj.get_rendition('max-130x130')
+                            rendition = obj.get_rendition('max-165x165')
                             data[field_name] = {
                                 'title': obj.title,
                                 'preview_image': {
